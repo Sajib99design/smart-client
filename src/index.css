@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@plugin "daisyui" {
+  themes: dark --default, light --prefersdark, cupcake;
+}
+
+@plugin "daisyui/theme" {
+  name: "dark";
+  default: true;
+  --color-primary: #632EE3;
+  --color-secondary: #9F62F2;
+};
+
+
+.btn-primary {
+  @apply bg-gradient-to-r from-[#632EE3] to-[#9F62F2] border-none text-white hover:opacity-70
+}
+
+/* .btn-primary:hover {
+  @apply opacity-90
+} */
